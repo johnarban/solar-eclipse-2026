@@ -3712,7 +3712,7 @@ export default defineComponent({
     },
 
     getCloudCover(lat: number, lon: number): number | null {
-      // convert lat/lon to row/col
+      // convert lat/lon to row/col 
       const d = this.rectangleDegrees;
       console.log(d, maxLat, minLon, lat, lon);
       const row = Math.round((maxLat - lat) / d);
